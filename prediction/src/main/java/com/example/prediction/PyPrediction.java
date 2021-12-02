@@ -5,7 +5,7 @@ import android.content.Context;
 import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
 
-public class pyPrediction {
+public class PyPrediction {
 
     public static String decision_tree(Context context, float v1, float v2, float v3, float v4) {
         Python py= Python.getInstance();

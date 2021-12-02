@@ -8,7 +8,6 @@ import androidx.core.content.ContextCompat;
 
 import android.Manifest;
 import android.app.Activity;
-import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -25,17 +24,15 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
 import com.chaquo.python.android.AndroidPlatform;
-import com.example.prediction.pyPrediction;
+import com.example.prediction.PyPrediction;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
@@ -111,13 +108,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     {
                         case  "Random Forest Model":
                             Toast.makeText(getApplicationContext(),"Prediction Using Random Forest Model",Toast.LENGTH_SHORT).show();
-                            String ans1= pyPrediction.random_forest(MainActivity.this,v1,v2,v3,v4);
+                            String ans1= PyPrediction.random_forest(MainActivity.this,v1,v2,v3,v4);
                             textView.setText(ans1);
                             break;
                         case "Decision Tree Model":
                             Toast.makeText(getApplicationContext(),"Prediction Using Decision Tree Model",Toast.LENGTH_SHORT).show();
                             //decision_tree(v1,v2,v3,v4);
-                            String ans2= pyPrediction.decision_tree(MainActivity.this,v1,v2,v3,v4);
+                            String ans2= PyPrediction.decision_tree(MainActivity.this,v1,v2,v3,v4);
                             textView.setText(ans2);
                             break;
 //                        case "XG Boost Model":
@@ -127,7 +124,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                         case "Extra Tree Model":
                             Toast.makeText(getApplicationContext(),"Prediction Using Extra Tree Model",Toast.LENGTH_SHORT).show();
                             //predict();
-                            String ans3= pyPrediction.extratree(MainActivity.this,v1,v2,v3,v4);
+                            String ans3= PyPrediction.extratree(MainActivity.this,v1,v2,v3,v4);
                             textView.setText(ans3);
                             break;
                     }
