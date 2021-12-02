@@ -45,8 +45,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private Button predict,reset;
     int requestcode=1;
     String file_name="";
-    //private ByteBuffer byteBuffer;
-    //float v1,v2,v3,v4;
 
 
     @Override
@@ -108,12 +106,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     float v2= Float.parseFloat(ed2.getText().toString());
                     float v3= Float.parseFloat(ed3.getText().toString());
                     float v4= Float.parseFloat(ed4.getText().toString());
-//                    byteBuffer=ByteBuffer.allocateDirect(4*4);
-//                    byteBuffer.putFloat(v1);
-//                    byteBuffer.putFloat(v2);
-//                    byteBuffer.putFloat(v3);
-//                    byteBuffer.putFloat(v4);
-                    //
+
                     switch (spinner.getSelectedItem().toString())
                     {
                         case  "Random Forest Model":
@@ -152,86 +145,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     }
 
-//    private void extratree(float v1, float v2, float v3, float v4) {
-//        Python py= Python.getInstance();
-//        PyObject pyObject=py.getModule("myScipt");
-//        PyObject obj=pyObject.callAttr("extratree",v1,v2,v3,v4);
-//        String str="";
-//        if(obj.toInt()==0){
-//            str+="Iris Setosa :1"+"\nIris Versicolour :0 "+"\nIris Virginica :0";
-//        }
-//
-//        else if(obj.toInt()==1){
-//            str+="Iris Setosa :0"+"\nIris Versicolour :1 "+"\nIris Virginica :0";
-//        }
-//
-//        if(obj.toInt()==2){
-//            str+="Iris Setosa :0"+"\nIris Versicolour :0 "+"\nIris Virginica :1";
-//        }
-//
-//        textView.setText(str);
-//    }
 
-//    private void xgboostcls(float v1, float v2, float v3, float v4) {
-//        Python py= Python.getInstance();
-//        PyObject pyObject=py.getModule("myScipt");
-//        PyObject obj=pyObject.callAttr("xgboostcls",v1,v2,v3,v4);
-//        String str="";
-//        if(obj.toInt()==0){
-//            str+="Iris Setosa :1"+"\nIris Versicolour :0 "+"\nIris Virginica :0";
-//        }
-//
-//        else if(obj.toInt()==1){
-//            str+="Iris Setosa :0"+"\nIris Versicolour :1 "+"\nIris Virginica :0";
-//        }
-//
-//        if(obj.toInt()==2){
-//            str+="Iris Setosa :0"+"\nIris Versicolour :0 "+"\nIris Virginica :1";
-//        }
-//
-//        textView.setText(str);
-//    }
-
-
-//    private void random_forest(float v1, float v2, float v3, float v4) {
-//        Python py= Python.getInstance();
-//        PyObject pyObject=py.getModule("myScipt");
-//        PyObject obj=pyObject.callAttr("randomforest",v1,v2,v3,v4);
-//        String str="";
-//        if(obj.toInt()==0){
-//            str+="Iris Setosa :1"+"\nIris Versicolour :0 "+"\nIris Virginica :0";
-//        }
-//
-//        else if(obj.toInt()==1){
-//            str+="Iris Setosa :0"+"\nIris Versicolour :1 "+"\nIris Virginica :0";
-//        }
-//
-//        if(obj.toInt()==2){
-//            str+="Iris Setosa :0"+"\nIris Versicolour :0 "+"\nIris Virginica :1";
-//        }
-//
-//        textView.setText(str);
-//    }
-
-//    private void decision_tree(float v1,float v2,float v3, float v4) {
-//        Python py= Python.getInstance();
-//        PyObject pyObject=py.getModule("myScipt");
-//        PyObject obj=pyObject.callAttr("main",v1,v2,v3,v4);
-//        String str="";
-//        if(obj.toInt()==0){
-//            str+="Iris Setosa :1"+"\nIris Versicolour :0 "+"\nIris Virginica :0";
-//        }
-//
-//        else if(obj.toInt()==1){
-//            str+="Iris Setosa :0"+"\nIris Versicolour :1 "+"\nIris Virginica :0";
-//        }
-//
-//        if(obj.toInt()==2){
-//            str+="Iris Setosa :0"+"\nIris Versicolour :0 "+"\nIris Virginica :1";
-//        }
-//
-//        textView.setText(str);
-//    }
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {

@@ -23,8 +23,6 @@ public class pyPrediction {
         if(obj.toInt()==2){
             str+="Iris Setosa :0"+"\nIris Versicolour :0 "+"\nIris Virginica :1";
         }
-
-        //textView.setText(str);
         return str;
     }
 
@@ -44,8 +42,6 @@ public class pyPrediction {
         if(obj.toInt()==2){
             str+="Iris Setosa :0"+"\nIris Versicolour :0 "+"\nIris Virginica :1";
         }
-
-        //textView.setText(str);
         return str;
     }
 
@@ -66,7 +62,6 @@ public class pyPrediction {
             str+="Iris Setosa :0"+"\nIris Versicolour :0 "+"\nIris Virginica :1";
         }
 
-        //textView.setText(str);
         return str;
     }
 }
