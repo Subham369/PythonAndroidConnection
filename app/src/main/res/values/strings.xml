@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PyAndroid</string>
+    <string-array name="numbers">
+        <item>Random Forest Model</item>
+        <item>Decision Tree Model</item>
+        <item>Extra Tree Model</item>
+    </string-array>
+</resources>
